@@ -11,6 +11,9 @@ class ReadXMLFile:
         return data.firstChild.data
 
 
+        
+
+
 obj =  ReadXMLFile()
 
 print("Your XML Data is ==>"+obj.resdXMLAsPerNode("applicationURL"))
