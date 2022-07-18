@@ -1,0 +1,21 @@
+<TestGoogleApplication>
+
+
+    <applicationURL>https://www.google.com</applicationURL>
+    <gmailLoginID>testuser001</gmailLoginID>
+    <gmailLoginPW>testPW001</gmailLoginPW>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</TestGoogleApplication>
