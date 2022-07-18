@@ -180,7 +180,7 @@ a = 50
 for i in range(5, a , 10):
     print(i)
 
-"""
+
 
 def addtwonum(a,b):
     return a+int(b)
@@ -210,6 +210,26 @@ TotalNum = int(M.replace("," , ""))+ int(P.replace("#" , "")) + int(W.replace(",
 if EX == TotalNum:
     print("Cart pricing Calculation is correct .......... PASS")
 
+
+"""
+
+testDict = {
+    "Name":"MITHUN",
+    "Company":"Wipro",
+    "Age":30
+}    
+
+
+#print(testDict)
+#print(testDict["Company"])
+
+testDict["Company"] = "Google"
+testDict.update({"Status":"Still Working"})
+
+print(testDict)
+
+for a in testDict:
+    print(a)
 
 
 
