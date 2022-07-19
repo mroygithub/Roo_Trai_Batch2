@@ -1,18 +1,23 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 import time
+from Reusable import Common
 
 
 class TestLocators:
 
     def IdentifyLocators(self):
 
-        driver = webdriver.Chrome("/Users/mithunroy/Downloads/BrowserDrivers/chromedriver")
+        driver = webdriver.Chrome(Common.resdXMLAsPerNode("chromepath"))
+        driver.get(Common.resdXMLAsPerNode("applicationURL"))
         driver.implicitly_wait(10)
-        driver.get("https://www.google.com")
+
+        # Get the Count of primary menu ....
+
+        primarymenu = driver.find_elements(By.XPATH,"(//div[@class='container'])[2]/div/div/div/div/ul/li/a")
+        print(len(primarymenu))
 
 
-        driver.find_element(By.NAME , "q").send_keys("Robot Framework")
         time.sleep(10)
 
         # Do Some Testing ...

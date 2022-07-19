@@ -1,9 +1,10 @@
 <TestGoogleApplication>
 
 
-    <applicationURL>https://www.google.com</applicationURL>
+    <applicationURL>https://techedtrainings.com/</applicationURL>
     <gmailLoginID>testuser001</gmailLoginID>
     <gmailLoginPW>testPW001</gmailLoginPW>
+    <chromepath>/Users/mithunroy/Downloads/BrowserDrivers/chromedriver</chromepath>
 
 
 
