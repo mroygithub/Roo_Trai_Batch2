@@ -3,6 +3,7 @@ from selenium.webdriver.common.by import By
 import sys
 sys.path.append("/Users/mithunroy/Desktop/SelPyBatch2")
 from reusableT import Common
+from PageObject import cuberPage
 import time
 
 
@@ -11,18 +12,18 @@ class TestLocators:
     def IdentifyLocators(self):
 
         driver = webdriver.Chrome(Common.resdXMLAsPerNode("chromepath"))
-        driver.get(Common.resdXMLAsPerNode("applicationURL"))
+        driver.get("https://the-internet.herokuapp.com/upload")
         driver.implicitly_wait(10)
 
-        # Get the Count of primary menu ....
 
-        primarymenu = driver.find_elements(By.XPATH,"(//div[@class='container'])[2]/div/div/div/div/ul/li/a")
-        print(len(primarymenu))
+        # Upload An Image ...
+        #/Users/mithunroy/Desktop/aa.png
 
-
-        time.sleep(10)
-
-        # Do Some Testing ...
+        driver.find_element(By.XPATH,"//input[@id='file-upload']").send_keys(Common.resdXMLAsPerNode("imagePath"))
+        time.sleep(5)
+        driver.find_element(By.XPATH,"//input[@value='Upload']").click()
+        time.sleep(5)
+        
 
 
         driver.quit

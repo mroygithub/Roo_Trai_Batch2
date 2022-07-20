@@ -2,9 +2,11 @@
 
 
     <applicationURL>https://techedtrainings.com/</applicationURL>
+    <applicationURL_cub>https://kubernetes.io/</applicationURL_cub>
     <gmailLoginID>testuser001</gmailLoginID>
     <gmailLoginPW>testPW001</gmailLoginPW>
     <chromepath>/Users/mithunroy/Downloads/BrowserDrivers/chromedriver</chromepath>
+    <imagePath>/Users/mithunroy/Desktop/aa.png</imagePath>
 
 
 
