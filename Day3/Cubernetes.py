@@ -44,7 +44,7 @@ class TestLocators:
         time.sleep(5)
         # Switch To Parent Window ...
 
-        driver.switch_to.window(driver.title=="Kubernetes (@kubernetesio) / Twitter")
+        driver.switch_to.window(driver.window_handles[0])
 
         print(driver.title)
 
